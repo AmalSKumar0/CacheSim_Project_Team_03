@@ -1,3 +1,5 @@
+---
+
 #💻 CacheSim Project | Team 03> **Simulating Cache Memory Mapping and Replacement Algorithms using Git Collaboration**
 
 This repository hosts the integrated semester project for **Amal Jyothi College of Engineering**, combining concepts from:
@@ -56,3 +58,5 @@ This repository hosts the integrated semester project for **Amal Jyothi College 
 ##🛠️ Tech Stack* **Programming Language:** Python 🐍
 * **Version Control:** Git & GitHub 🐙
 * **Documentation:** Markdown & Canva 📝
+
+---
