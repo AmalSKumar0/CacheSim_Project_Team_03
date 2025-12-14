@@ -1,0 +1,36 @@
+Step 1.Start
+
+Step 2.Initialize an empty list memory to store pages in frames.
+
+Step 3.Initialize index = 0
+       (This points to the oldest page in memory for FIFO replacement.)
+
+Step 4.Initialize page_faults = 0.
+
+Step 5.For each page p in pages, do:
+
+       1.If p is already present in memory:
+
+         ->Report Page Hit.
+
+       2.Else:
+
+         ->Report Page Fault.
+
+           Increment page_faults by 1.
+
+           If the number of pages in memory is less than frames:
+
+             Insert p into memory.
+
+           Else:
+
+             Replace the page at position index in memory with p.
+
+             Update index ← (index + 1) mod frames.
+
+       3.Display the current contents of memory.
+
+Step 6.Display the total number of page faults.
+
+Step 7.Stop
