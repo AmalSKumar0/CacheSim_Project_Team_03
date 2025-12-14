@@ -1,0 +1,32 @@
+Simplified Algorithm (LRU Cache)
+
+step 1. Setup Cache
+    Define the cache size, block size, and how many items fit in one set (associativity).
+    Calculate the number of sets (buckets) available.
+
+Step 2. Read Memory Address
+    Take the incoming memory address from the input list.
+
+Step 3. Find the Location
+    Split the address into two parts:
+    Set Index: Determines which specific "bucket" to look in.
+    Tag: The unique ID of the data block.
+
+Step 4. Check for Data (Search)
+    Go to the calculated Set Index.
+    Look for the Tag in that set.
+
+Step 5. Handle HIT (Data Found)
+    If the Tag is found:
+        Count it as a Hit.
+        Update Priority: Move the Tag to the end of the list (mark it as "most recently used").
+
+Step 6. Handle MISS (Data Not Found)
+    If the Tag is NOT found:
+        Count it as a Miss.
+        Check Space: If the set is full, remove the oldest item (the one at the front of the list).
+        Insert: Add the new Tag to the end of the list.
+
+Step 7. Final Report
+    Repeat steps 2-6 for all addresses.
+    Print the total Hits, Misses, and the Hit Ratio percentage.
