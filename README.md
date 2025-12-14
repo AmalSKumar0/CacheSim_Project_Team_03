@@ -1,6 +1,10 @@
 ---
 
-#💻 CacheSim Project | Team 03> **Simulating Cache Memory Mapping and Replacement Algorithms using Git Collaboration**
+#💻 CacheSim Project | Team 03 **Simulating Cache Memory Mapping and Replacement Algorithms using**
+
+---
+
+Git Collaboration**
 
 This repository hosts the integrated semester project for **Amal Jyothi College of Engineering**, combining concepts from:
 
