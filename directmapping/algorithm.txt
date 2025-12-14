@@ -1,0 +1,40 @@
+Start
+
+Read the main memory address A.
+
+Divide address A into three fields:
+
+Tag
+
+Index
+
+Offset
+
+Compute the cache line number using:
+
+Index = (Block Number) mod L
+
+
+Access the cache line specified by Index.
+
+Compare the Tag of the address with the Tag stored in that cache line.
+
+If tags match:
+
+Declare Cache Hit
+
+Use Offset to read the required word from cache.
+
+Else (tags do not match):
+
+Declare Cache Miss
+
+Fetch the required block from main memory.
+
+Replace the block in the selected cache line.
+
+Update the tag.
+
+Use Offset to access the word.
+
+End
