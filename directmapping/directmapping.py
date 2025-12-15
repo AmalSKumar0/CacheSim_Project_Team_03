@@ -138,13 +138,10 @@ CACHE_SIZE = 32  # 32 bytes
 BLOCK_SIZE = 8   # 8 bytes per block
 MAIN_MEMORY_SIZE = 128 # 128 bytes
 
-# Create the cache instance
+
 dm_cache = DirectMappedCache(CACHE_SIZE, BLOCK_SIZE, MAIN_MEMORY_SIZE)
 
-# 
 
-# Access Pattern
-# The addresses are the starting byte of the data to be accessed.
 accesses = [
     0,   # Block 0 -> Index 0. MISS. (T=0, I=0)
     8,   # Block 1 -> Index 1. MISS. (T=0, I=1)
@@ -158,8 +155,7 @@ accesses = [
 print(">>> Starting Memory Access Simulation <<<")
 for addr in accesses:
     dm_cache.access_memory(addr)
-    # Optional: uncomment to see the cache state after every access
-    # dm_cache.print_cache_state()
+    #abcd
 
 dm_cache.print_stats()
 dm_cache.print_cache_state()

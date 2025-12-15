@@ -33,4 +33,4 @@ Step 5.For each page p in pages, do:
 
 Step 6.Display the total number of page faults.
 
-Step 7.Stop
+Step 7.Stop"Contributor verification commit by starlord692" 
